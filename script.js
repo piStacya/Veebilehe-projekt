@@ -10,4 +10,4 @@ document.getElementById("generate-tip").addEventListener("click", function () {
     const randomTip = tips[Math.floor(Math.random() * tips.length)];
     document.getElementById("daily-tip").innerText = randomTip;
   });
-  
+  //Koodi saime chatGPT abil//
