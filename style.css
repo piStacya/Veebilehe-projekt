@@ -1,0 +1,281 @@
+/* Üldine nullimine */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #121212;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header ja Nav */
+header {
+  background: #222;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between; /* Logo vasakule ja menüü paremale */
+  align-items: center; /* Joondab elemendid vertikaalselt keskele */
+  position: relative; /* Positsioneerib headeri hover-probleemi lahendamiseks */
+  z-index: 10; /* Tagab, et hoveri efekt ei ületa logo */
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000; /* Logo tekst mustaks */
+  background: #fff; /* Logo taust valge */
+  padding: 0.2rem 0.5rem; /* Sama kaugus vasakult ja paremalt */
+  border-radius: 3px; /* Kerged ümarad servad */
+  text-align: left;
+  margin-left: 0; /* Logo jääb täielikult vasakule */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Kerge vari */
+  display: inline-block; /* Kast ümbritseb täpselt logo teksti */
+  position: relative; /* Tagab, et logo kattumine hoveriga välditakse */
+  z-index: 20; /* Logo asub hoveri kohal */
+}
+
+nav {
+  margin-right: 10px; /* Menüü paremale servale */
+}
+
+nav ul {
+  list-style: none;
+  display: flex; /* Menüü ühele reale */
+  gap: 15px; /* Ruumi kirjete vahele */
+  margin: 0;
+  padding: 0;
+  position: relative; /* Hover jääb täpselt lingi ümber */
+  z-index: 10; /* Menüü jääb allapoole logot */
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px; /* Väike hover-taust */
+  transition: background 0.3s ease-in-out, padding 0.3s ease-in-out;
+  border-radius: 5px; /* Ümarad servad */
+  z-index: 10; /* Veendub, et hover on lingiga seotud */
+}
+
+nav ul li a:hover {
+  background: #444; /* Hoveri taust */
+  padding: 5px 10px; /* Väike efekt, ei suurenda ala */
+  z-index: 10; /* Ei tõuse üle logo */
+}
+
+
+/* Hero sektsioon */
+.hero {
+  background: url('https://img.freepik.com/free-photo/sideways-cute-dog-standing_23-2148423723.jpg?t=st=1733151022~exp=1733154622~hmac=fc3de261ee4a18958b24f93e28cc83eeb459ace6eb47e5f20481c1dd31bdb11b&w=740') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero button {
+  padding: 10px 20px;
+  background: orange;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.hero button:hover {
+  background: #e67e22;
+}
+
+/* Teenuste sektsioon */
+#teenused {
+  text-align: center;
+  padding: 2rem;
+}
+
+.service-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.service {
+  background: #333;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  width: 22%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.7);
+}
+
+.service img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* Päeva Näpunäide */
+.daily-tip-section {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.tip-box {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  margin: 1rem auto;
+  max-width: 500px;
+}
+
+.tip-button {
+  background: orange;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.tip-button:hover {
+  background: #e67e22;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 4rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links
+
+
+
+/* Päeva Näpunäide */
+.daily-tip-section {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 2rem 0;
+  background: #1e1e1e; /* Tumedam taust, eristub ülejäänud sektsioonidest */
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); /* Pehme vari sektsiooni ümber */
+}
+
+.daily-tip-section h1 {
+  color: #ff9800; /* Oranž pealkirja värv */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.tip-box {
+  background: #333;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  margin: 1rem auto;
+  max-width: 500px;
+  box-shadow: 0px 4px 10px rgba(255, 152, 0, 0.3); /* Oranži tooniga vari */
+}
+
+.tip-button {
+  background: #ff9800; /* Sama oranž kui pealkiri */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.tip-button:hover {
+  background: #e67e22;
+  transform: scale(1.05); /* Kergelt suurendab nuppu hoveri ajal */
+}
+
+/* Päeva Näpunäide */
+.daily-tip-section {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 2rem 0;
+  background: linear-gradient(135deg, #2a2a2a, #3a3a3a); /* Gradientse taustaga */
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); /* Pehme vari sektsiooni ümber */
+}
+
+.daily-tip-section h1 {
+  color: #ff9800; /* Oranž pealkirja värv */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.tip-box {
+  background: #333;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  margin: 1rem auto;
+  max-width: 500px;
+  box-shadow: 0px 4px 10px rgba(255, 152, 0, 0.3); /* Oranži tooniga vari */
+}
+
+.tip-button {
+  background: #ff9800; /* Sama oranž kui pealkiri */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.tip-button:hover {
+  background: #e67e22;
+  transform: scale(1.05); /* Kergelt suurendab nuppu hoveri ajal */
+}
