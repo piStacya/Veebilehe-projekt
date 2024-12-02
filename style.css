@@ -17,6 +17,7 @@ header {
   background: #222;
   padding: 1rem 2rem;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -24,11 +25,12 @@ header .logo {
   font-size: 1.5rem;
   font-weight: bold;
   color: #fff;
-  flex-shrink: 0; /* Veendu, et logo jääb alati vasakule */
+  text-align: left;
+  flex: 0 0 auto;
 }
 
 nav {
-  margin-left: auto; /* Lükkab menüü paremasse serva */
+  margin-left: auto;
 }
 
 nav ul {
@@ -117,14 +119,34 @@ nav ul li a:hover {
   margin-bottom: 1rem;
 }
 
-.service h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+/* Päeva Näpunäide */
+.daily-tip-section {
+  text-align: center;
+  margin-top: 2rem;
 }
 
-.service a {
-  text-decoration: none;
+.tip-box {
+  background: #333;
   color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  margin: 1rem auto;
+  max-width: 500px;
+}
+
+.tip-button {
+  background: orange;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.tip-button:hover {
+  background: #e67e22;
 }
 
 /* Footer */
@@ -147,11 +169,92 @@ footer {
   text-decoration: none;
 }
 
-.footer-links ul li a:hover {
-  text-decoration: underline;
+.footer-links
+
+
+
+/* Päeva Näpunäide */
+.daily-tip-section {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 2rem 0;
+  background: #1e1e1e; /* Tumedam taust, eristub ülejäänud sektsioonidest */
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); /* Pehme vari sektsiooni ümber */
 }
 
-footer .copyright {
+.daily-tip-section h1 {
+  color: #ff9800; /* Oranž pealkirja värv */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.tip-box {
+  background: #333;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  margin: 1rem auto;
+  max-width: 500px;
+  box-shadow: 0px 4px 10px rgba(255, 152, 0, 0.3); /* Oranži tooniga vari */
+}
+
+.tip-button {
+  background: #ff9800; /* Sama oranž kui pealkiri */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.tip-button:hover {
+  background: #e67e22;
+  transform: scale(1.05); /* Kergelt suurendab nuppu hoveri ajal */
+}
+
+/* Päeva Näpunäide */
+.daily-tip-section {
+  text-align: center;
   margin-top: 2rem;
-  font-size: 0.9rem;
+  padding: 2rem 0;
+  background: linear-gradient(135deg, #2a2a2a, #3a3a3a); /* Gradientse taustaga */
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); /* Pehme vari sektsiooni ümber */
+}
+
+.daily-tip-section h1 {
+  color: #ff9800; /* Oranž pealkirja värv */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.tip-box {
+  background: #333;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  margin: 1rem auto;
+  max-width: 500px;
+  box-shadow: 0px 4px 10px rgba(255, 152, 0, 0.3); /* Oranži tooniga vari */
+}
+
+.tip-button {
+  background: #ff9800; /* Sama oranž kui pealkiri */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.tip-button:hover {
+  background: #e67e22;
+  transform: scale(1.05); /* Kergelt suurendab nuppu hoveri ajal */
 }
