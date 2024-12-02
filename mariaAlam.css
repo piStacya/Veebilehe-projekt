@@ -1,0 +1,191 @@
+/* Üldine nullimine */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  /* päis ja navigatsioon */
+/* päisi kujundus */
+header {
+  background: #222;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between; /* Logo vasakule ja menüü paremale */
+  align-items: center; /* Joondab elemendid vertikaalselt keskele */
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000; /* Logo tekst mustaks */
+  background: #fff; /* Logo taust valge */
+  padding: 0.2rem 0.5rem; /* Sama kaugus vasakult ja paremalt */
+  border-radius: 3px; /* Kerged ümarad servad */
+  text-align: left;
+  margin-left: 0; /* Logo jääb täielikult vasakule */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Kerge vari */
+  display: inline-block; /* Tagab, et kast ümbritseb täpselt logo teksti */
+}
+/*Navigatsioon*/
+nav {
+  margin-right: 10px; /* Menüü paremale servale */
+}
+
+nav ul {
+  list-style: none;
+  display: flex; /* Menüü ühele reale */
+  gap: 15px; /* Ruumi kirjete vahele */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  background: #444;
+  border-radius: 5px;
+}
+
+  /* Hero sektsioon */
+  .hero {
+    background: url('stacy-hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 6rem 2rem;
+  }
+  
+  .hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  .hero h1 {
+    font-size: 2rem; /* Tekst väiksemaks */
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1rem; /* Tekst väiksemaks */
+    margin-bottom: 1rem;
+  }
+  
+  .hero img {
+    margin-top: 1rem;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Info sektsioon */
+  .info-section {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .info-section h2 {
+    font-size: 1.8rem; /* Tekst väiksemaks */
+    color: #ff9800;
+    margin-bottom: 1rem;
+  }
+  
+  .info-card {
+    background: #333;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px; /* Ühtne laius */
+    height: 380px; /* Ühtne kõrgus */
+    margin: 1rem auto;
+    display: inline-block;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .info-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.7);
+  }
+  
+  .info-card img {
+    max-width: 100%;
+    height: 180px; /* Ühtne kõrgus piltidele */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .info-card h3 {
+    font-size: 1.2rem; /* Tekst väiksemaks */
+    color: #ff9800;
+    margin-bottom: 0.5rem;
+  }
+  
+  .info-card p {
+    font-size: 0.9rem; /* Tekst väiksemaks */
+    color: #fff;
+  }
+  
+  /* alumise sektsiooni kujundus */
+  footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 4rem;
+  }
+  
+  .footer-content {
+    margin: auto;
+    text-align: center;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 1rem 0;
+  }
+  
+  .footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #ff9800;
+  }
+  
+  footer p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #ddd;
+  }
+  
+  .pildid {
+    width:200px;
+    height:200px;
+  }
+  
+  .esipilt {
+    width: 560px;
+    height: 350px;
+  }
