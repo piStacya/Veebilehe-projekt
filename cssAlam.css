@@ -1,12 +1,3 @@
-.pildid {
-  width:200px;
-  height:200px;
-}
-
-.logo {
-  width: 340px;
-  height: 340px;
-}
 /* Üldine nullimine */
 * {
     margin: 0;
@@ -22,44 +13,56 @@
   }
   
   /* Header ja Nav */
-  header {
-    background: #222;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  header .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #fff;
-    text-align: left;
-    flex: 0 0 auto;
-  }
-  
-  nav {
-    margin-left: auto;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 15px;
-    transition: background 0.3s;
-  }
-  
-  nav ul li a:hover {
-    background: #444;
-    border-radius: 5px;
-  }
-  
+/* Header ja Nav */
+header {
+  background: #222;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between; /* Logo vasakule ja menüü paremale */
+  align-items: center; /* Joondab elemendid vertikaalselt keskele */
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000; /* Logo tekst mustaks */
+  background: #fff; /* Logo taust valge */
+  padding: 0.2rem 0.5rem; /* Sama kaugus vasakult ja paremalt */
+  border-radius: 3px; /* Kerged ümarad servad */
+  text-align: left;
+  margin-left: 0; /* Logo jääb täielikult vasakule */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Kerge vari */
+  display: inline-block; /* Tagab, et kast ümbritseb täpselt logo teksti */
+}
+
+nav {
+  margin-right: 10px; /* Menüü paremale servale */
+}
+
+nav ul {
+  list-style: none;
+  display: flex; /* Menüü ühele reale */
+  gap: 15px; /* Ruumi kirjete vahele */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  background: #444;
+  border-radius: 5px;
+}
+
   /* Hero sektsioon */
   .hero {
     background: url('stacy-hero.jpg') no-repeat center center/cover;
