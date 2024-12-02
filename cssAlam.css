@@ -20,6 +20,8 @@ header {
   display: flex;
   justify-content: space-between; /* Logo vasakule ja menüü paremale */
   align-items: center; /* Joondab elemendid vertikaalselt keskele */
+  position: relative; /* Positsioneerib headeri hover-probleemi lahendamiseks */
+  z-index: 10; /* Tagab, et hoveri efekt ei ületa logo */
 }
 
 header .logo {
@@ -32,7 +34,9 @@ header .logo {
   text-align: left;
   margin-left: 0; /* Logo jääb täielikult vasakule */
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Kerge vari */
-  display: inline-block; /* Tagab, et kast ümbritseb täpselt logo teksti */
+  display: inline-block; /* Kast ümbritseb täpselt logo teksti */
+  position: relative; /* Tagab, et logo kattumine hoveriga välditakse */
+  z-index: 20; /* Logo asub hoveri kohal */
 }
 
 nav {
@@ -45,6 +49,8 @@ nav ul {
   gap: 15px; /* Ruumi kirjete vahele */
   margin: 0;
   padding: 0;
+  position: relative; /* Hover jääb täpselt lingi ümber */
+  z-index: 10; /* Menüü jääb allapoole logot */
 }
 
 nav ul li {
@@ -54,13 +60,16 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  padding: 10px 15px;
-  transition: background 0.3s ease-in-out;
+  padding: 5px 10px; /* Väike hover-taust */
+  transition: background 0.3s ease-in-out, padding 0.3s ease-in-out;
+  border-radius: 5px; /* Ümarad servad */
+  z-index: 10; /* Veendub, et hover on lingiga seotud */
 }
 
 nav ul li a:hover {
-  background: #444;
-  border-radius: 5px;
+  background: #444; /* Hoveri taust */
+  padding: 5px 10px; /* Väike efekt, ei suurenda ala */
+  z-index: 10; /* Ei tõuse üle logo */
 }
 
   /* Hero sektsioon */
