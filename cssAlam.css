@@ -1,4 +1,12 @@
+.pildid {
+  width:200px;
+  height:200px;
+}
 
+.logo {
+  width: 340px;
+  height: 340px;
+}
 /* Üldine nullimine */
 * {
     margin: 0;
