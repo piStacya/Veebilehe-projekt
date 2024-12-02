@@ -1,3 +1,7 @@
+img {
+  width: 70px;
+  height: 70px;
+}
 /* Üldine nullimine */
 * {
     margin: 0;
